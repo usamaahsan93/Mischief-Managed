@@ -1,0 +1,12 @@
+pyinstaller cursorCode.py --exclude-module scipy --exclude-module numpy --exclude-module PIL --exclude-module tcl --exclude-module tcl8 -y -a --noconsole --exclude-module PyQt5
+
+
+pyinstaller cursorCode.py --exclude-module scipy --exclude-module numpy --exclude-module PIL --exclude-module tcl --exclude-module tcl8 -y -a --noconsole --exclude-module PyQt5 --icon myicon.icns --clean -F
+
+
+pyinstaller cursorCode.py --exclude-module scipy --exclude-module numpy --exclude-module PIL --exclude-module PyQt5 --exclude-module tcl --exclude-module tcl8 -y -a -w  --icon /home/sdn1/Work/Mischief Managed/myico.icns --clean -F
+
+pyinstaller cursorCode.py --exclude-module scipy --exclude-module numpy --exclude-module PIL --exclude-module PyQt5 --exclude-module tcl --exclude-module tcl8 -y -a -w  --add-data "dummy.pdf;dummy.pdf" --icon "/home/sdn1/Work/Mischief Managed/myico.icns" --clean -F
+
+pyinstaller cursorCode.py --exclude-module scipy --exclude-module numpy --exclude-module PIL --exclude-module PyQt5 --exclude-module tcl --exclude-module tcl8 -y -a -w  --icon /home/sdn1/Work/Mischief_Managed/myico.icns --clean -F --add-data "/home/sdn1/Work/Mischief_Managed/dummy.pdf:/home/sdn1/Work/Mischief_Managed/dummy.pdf"
+
